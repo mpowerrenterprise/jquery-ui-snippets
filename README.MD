@@ -2,9 +2,15 @@
 
 ## Introduction
 
+jQuery is a powerful Javascript library built on top of jQuery JavaScript library. UI stands for User interface, It is a set of plug-ins for jQuery that adds new functionalities to the jQuery core library.
+
 jQuery UI is a collection of GUI widgets, animated visual effects, and themes implemented with jQuery, Cascading Style Sheets, and HTML. According to JavaScript analytics service, Libscore, jQuery UI was used on over 197,000 of the top one million websites, making it the second most popular JavaScript library.
 
-![Banner Image](github-readme-content/jquery-ui-banner-image.jpg/)
+The set of plug-ins in JqueryUI includes interface interactions, effects, animations, widgets, and themes built on top of jQuery JavaScript Library.
+
+It was released in September 2007, announced in a blog post by John Resig on jquery.com. The latest release, 1.10.4, requires jQuery 1.6 or later version. jQuery UI is a free, open source software, licensed under the MIT License.
+
+![Banner Image](github-readme-content/jquery-ui-banner-image.jpeg)
 
 ## Learning Resources
 
