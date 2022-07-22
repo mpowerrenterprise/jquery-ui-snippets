@@ -17,7 +17,7 @@ It was released in September 2007, announced in a blog post by John Resig on jqu
 1. [The New Bonston Snippets](1-the-new-bonston-snippets/)
 2. [jQuery UI Snippets](2-jquery-ui-snippets/)
 
-# Social Media Links
+## Social Media Links
 
 * [Linkedin Profile](https://www.linkedin.com/in/gunarakulangunaretnam/)
 * [Facebook Page](https://www.facebook.com/gunarakulangunaretnam)
