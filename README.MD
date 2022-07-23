@@ -10,7 +10,7 @@ The set of plug-ins in JqueryUI includes interface interactions, effects, animat
 
 It was released in September 2007, announced in a blog post by John Resig on jquery.com. The latest release, 1.10.4, requires jQuery 1.6 or later version. jQuery UI is a free, open source software, licensed under the MIT License.
 
-![Banner Image](github-readme-content/jquery-ui-banner-image.jpeg)
+![Banner Image](github-readme-content/jquery-ui-banner-image.png)
 
 ## Learning Resources
 
