@@ -1413,3 +1413,784 @@ $(document).ready(function () {
 ### Output
 
 ![Banner Image](github-content/example-2-6-output.gif/)
+
+## 3. Sortable () Snippets
+
+### Example 0
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>This is the title</title>
+
+        <link href="style.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+<body>
+
+    <ul id="names">
+
+        <li>Kuna</li>
+        <li>Rakulan</li>
+        <li>Joker</li>
+        <li>Hacker</li>
+        <li>GTA</li>
+
+    </ul>
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### CSS
+
+```CSS
+#names {
+
+    padding:10px;
+    list-style-type:none;
+    width:200px;
+    height:200px;
+}
+```
+
+#### JavaScript
+
+```JavaScript
+$(document).ready(function () {
+
+    $("#names").sortable({
+
+        containment: "document",//I can move the elements within the document.
+        cursor: "pointer",//It has pointer cursor.
+        tolerance: "pointer",//when the pointer of the mouse hit the next element this will change.
+        revert: true,//This will send the element to the normal position.
+        opacity:0.5//This is opcity value.
+
+    });
+
+});
+
+//The sortable() function is used for changing the potion of the elements.It is used for alinetmenting purpose.
+```
+
+### Output
+
+![Banner Image](github-content/example-3-0-output.gif/)
+
+### Example 1
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>This is the title</title>
+
+        <link href="style.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+<body>
+
+    <ul id="names">
+
+        <li>Kuna</li>
+        <li>Rakulan</li>
+        <li>Joker</li>
+        <li>Hacker</li>
+        <li>GTA</li>
+
+    </ul>
+
+    <ul id="places">
+
+        <li>United Kindom</li>
+        <li>United State</li>
+        <li>New York City</li>
+        <li>India</li>
+        <li>Sri Lanka</li>
+    </ul>
+
+    <div id="sort">
+
+    </div>
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### CSS
+
+```CSS
+#names {
+
+    padding:10px;
+    list-style-type:none;
+
+}
+
+#places {
+
+    padding:10px;
+    list-style-type:none;
+
+}
+
+#sort {
+
+    color:red;
+
+}
+```
+
+#### JavaScript
+
+```JavaScript
+$(document).ready(function () {
+
+    $("#names,#places").sortable({
+
+        containment: "document",//I can move the elements within the document.
+        cursor: "pointer",//It has pointer cursor.
+        tolerance: "pointer",//when the pointer of the mouse hit the next element this will change.
+        revert: true,//This will send the element to the normal position.
+        opacity:0.5,//This is opcity value.
+        connectWith: "#names,#places",//Now #names and #places has been connected together.We can move from #names to #places.
+        update: function () {//This works when an element updates.
+
+            var con=$(this).text()//This variable got the all texts.
+
+            $("#sort").text(con);
+        },
+
+    });
+
+});
+
+//The sortable() function is used for changing the potion of the elements.It is used for alinetmenting purpose.
+```
+
+### Output
+
+![Banner Image](github-content/example-3-1-output.gif/)
+
+## 4. Resizable () Snippets
+
+### Example 0
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>This is the title</title>
+
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+<body>
+
+        <div id="box"></div>
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### CSS
+
+```CSS
+#box {
+
+    width:100px;
+    height:100px;
+    background-color:darkgray;
+    border:1px solid black;
+
+}
+```
+
+#### JavaScript
+
+```JavaScript
+$(document).ready(function () {
+
+    $("#box").resizable();
+
+});
+
+//The resizable() function is used to make resizable boxes and elements.
+```
+
+### Output
+
+![Banner Image](github-content/example-4-0-output.gif/)
+
+### Example 1
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>This is the title</title>
+
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+<body>
+
+    <div id="big_box">
+
+        <div id="box"></div>
+
+    </div>
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### CSS
+
+```CSS
+#box {
+
+    width:100px;
+    height:100px;
+    background-color:darkgray;
+    border:1px solid black;
+
+}
+
+#big_box {
+
+    width:500px;
+    height:500px;
+    background-color:lightgray;
+
+}
+```
+
+#### JavaScript
+
+```JavaScript
+$(document).ready(function () {
+
+    $("#box").resizable({
+
+        containment:"parent"
+
+    });
+
+});
+
+//The resizable() function is used to make resizable boxes and elements.
+```
+
+### Output
+
+![Banner Image](github-content/example-4-1-output.gif/)
+
+### Example 2
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>This is the title</title>
+
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+<body>
+
+        <div id="box"></div>
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### CSS
+
+```CSS
+#box {
+
+    width:100px;
+    height:100px;
+    background-color:darkgray;
+    border:1px solid black;
+
+}
+```
+
+#### JavaScript
+
+```JavaScript
+$(document).ready(function () {
+
+    $("#box").resizable({
+
+        animate:true//This will give an animation resize
+
+    });
+
+});
+
+//The resizable() function is used to make resizable boxes and elements.
+```
+
+### Output
+
+![Banner Image](github-content/example-4-2-output.gif/)
+
+### Example 3
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>This is the title</title>
+
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+<body>
+
+        <div id="box"></div>
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### CSS
+
+```CSS
+#box {
+
+    width:100px;
+    height:100px;
+    background-color:darkgray;
+    border:1px solid black;
+
+}
+```
+
+#### JavaScript
+
+```JavaScript
+$(document).ready(function () {
+
+    $("#box").resizable({
+
+        ghost:true//This will show a shadow.
+
+    });
+
+});
+
+//The resizable() function is used to make resizable boxes and elements.
+```
+
+### Output
+
+![Banner Image](github-content/example-4-3-output.gif/)
+
+### Example 4
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>This is the title</title>
+
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+<body>
+
+        <div id="box"></div>
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### CSS
+
+```CSS
+#box {
+
+    width:100px;
+    height:100px;
+    background-color:darkgray;
+    border:1px solid black;
+
+}
+```
+
+#### JavaScript
+
+```JavaScript
+$(document).ready(function () {
+
+    $("#box").resizable({
+        animate: true,//We have an animation
+        animationDuration: "solw",//This is the duration of the animation.
+        animateEasing: "linear",//This is type of the animation by default it is swing.
+        autoHide: true,//autoHide hides the resize button when you over the element it will appear.
+        grid:[20,20],//This is grid it will resize by 20 width and 20 height.
+        ghost:true//This will show a shadow.
+
+    });
+
+});
+
+//The resizable() function is used to make resizable boxes and elements.
+```
+
+### Output
+
+![Banner Image](github-content/example-4-4-output.gif/)
+
+### Example 0
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>This is the title</title>
+
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+<body>
+
+        <div id="box"></div>
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### CSS
+
+```CSS
+#box {
+
+    width:100px;
+    height:100px;
+    background-color:darkgray;
+    border:1px solid black;
+
+}
+```
+
+#### JavaScript
+
+```JavaScript
+$(document).ready(function () {
+
+    $("#box").resizable({
+
+        grid:[50,50]//This will increse the height and width by 50 50.
+    });
+
+});
+
+//The resizable() function is used to make resizable boxes and elements.
+```
+
+### Output
+
+![Banner Image](github-content/example-4-5-output.gif/)
+
+### Example 6
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>This is the title</title>
+
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+<body>
+
+        <div id="box"></div>
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### CSS
+
+```CSS
+#box {
+
+    width:100px;
+    height:100px;
+    background-color:darkgray;
+    border:1px solid black;
+
+}
+```
+
+#### JavaScript
+
+```JavaScript
+$(document).ready(function () {
+
+    $("#box").resizable({
+
+        handles:"e"
+    });
+
+});
+
+//e for east
+//n for north
+//s for south
+//w for west
+//ne for north east
+//se for south east
+//sw for south west
+//and so on.
+
+//The resizable() function is used to make resizable boxes and elements.
+```
+
+### Output
+
+![Banner Image](github-content/example-4-6-output.gif/)
+
+### Example 7
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>This is the title</title>
+
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+<body>
+
+        <div id="box"></div>
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### CSS
+
+```CSS
+#box {
+
+    width:100px;
+    height:100px;
+    background-color:darkgray;
+    border:1px solid black;
+
+}
+```
+
+#### JavaScript
+
+```JavaScript
+$(document).ready(function () {
+
+    $("#box").resizable({
+
+        handles:"all"//This will allow from all sides.we can resize from all sides.
+    });
+
+});
+
+//The resizable() function is used to make resizable boxes and elements.
+```
+
+### Output
+
+![Banner Image](github-content/example-4-7-output.gif/)
+
+### Example 8
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>This is the title</title>
+
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+<body>
+
+        <div id="box"></div>
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### CSS
+
+```CSS
+#box {
+
+    width:100px;
+    height:100px;
+    background-color:darkgray;
+    border:1px solid black;
+
+}
+```
+
+#### JavaScript
+
+```JavaScript
+$(document).ready(function () {
+
+    $("#box").resizable({
+
+        maxWidth: 250,//Maximum Width resizable
+        maxHeight: 250,//Maximum Height resizable
+        minWidth: 100,//Minimum Width resizable
+        minHeight: 100//Minimum Height resizable
+
+    });
+
+});
+
+//The resizable() function is used to make resizable boxes and elements.
+```
+
+### Output
+
+![Banner Image](github-content/example-4-8-output.gif/)
