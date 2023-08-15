@@ -17,10 +17,12 @@ It was released in September 2007, announced in a blog post by John Resig on jqu
 1. [The New Bonston Snippets](1-the-new-bonston-snippets/)
 2. [jQuery UI Snippets](2-jquery-ui-snippets/)
 
-## Social Media Links
+## Social Links
 
-* [Linkedin Profile](https://www.linkedin.com/in/gunarakulangunaretnam/)
-* [Facebook Page](https://www.facebook.com/gunarakulangunaretnam)
-* [Twitter Profile](https://twitter.com/gunarakulan)
-* [Instagram Profile](https://www.instagram.com/gunarakulangunaretnam/)
-* [Youtube Channel](https://www.youtube.com/channel/UCMWkED5sabgVZSCKjZuRJXA)
+* [Linkedin Profile](https://www.linkedin.com/in/gunarakulangunaretnam)
+* [Facebook Profile](https://www.facebook.com/gunarakulangr.page)
+* [Instagram Profile](https://www.instagram.com/gunarakulangunaretnam)
+* [Twitter Profile ](https://twitter.com/gunarakulangr)
+* [Kaggle Profile](https://www.kaggle.com/gunarakulangr)
+* [TikTok Profile](https://www.tiktok.com/@gunarakulangunaretnam)
+* [Youtube Profile](https://www.youtube.com/channel/UCMWkED5sabgVZSCKjZuRJXA)
