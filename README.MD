@@ -1,4 +1,4 @@
-# JQUERY UI SNIPPETS
+# jQuery UI Snippets
 
 ## Introduction
 
@@ -17,7 +17,7 @@ It was released in September 2007, announced in a blog post by John Resig on jqu
 1. [The New Bonston Snippets](1-the-new-bonston-snippets/)
 2. [jQuery UI Snippets](2-jquery-ui-snippets/)
 
-# CONTACT
+# Contact
 
 ### Website: 
 
